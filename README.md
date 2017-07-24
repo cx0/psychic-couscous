@@ -21,4 +21,6 @@ import numpy as np
 X = np.random.binomial(2, 0.5, size=(m, n))
 z_ = (X.T - np.mean(X.T, axis=0)) / np.std(X.T, axis=0, ddof=1)
 z = z_.T
-"""
+```
+----
+
