@@ -21,16 +21,20 @@ import numpy as np
 X = np.random.binomial(2, 0.5, size=(m, n))
 z_ = (X.T - np.mean(X.T, axis=0)) / np.std(X.T, axis=0, ddof=1)
 z = z_.T
-<<<<<<< HEAD
-"""
+```
 
 ----
+
+Interactive queue on `Orchestra`. 
 
 ```bash
 bsub -n 6 -Is -q interactive bash
 ```
-=======
-```
+
 ----
 
->>>>>>> fe4b5a83aa5f74823aae3d222351392e14e0643c
+Send `bash` command to background. 
+
+```bash
+nohup sh -c 'for i in dir/*.ped; do ./myscript.sh "$i"; done >output.txt' &
+```
