@@ -31,6 +31,12 @@ Interactive queue on `Orchestra`.
 bsub -n 6 -Is -q interactive bash
 ```
 
+HMS switched to `slurm`.
+
+```bash
+srun --pty -p interactive -t 10 --mem 2000 /bin/bash 
+```
+
 ----
 
 Send `bash` command to background. 
