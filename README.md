@@ -1,5 +1,11 @@
 # psychic-couscous
 
+Append leading digits to an ordered sequence of numbers.
+
+```bash
+for num in $(seq -w 01 10); do echo $num; done
+```
+
 ----
 Update timestamp recursively using `touch`.
 
